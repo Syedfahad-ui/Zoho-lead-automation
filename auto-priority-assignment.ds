@@ -1,0 +1,18 @@
+leadID = input.ID;
+budgetValue = Leads[ID == leadID].Budget;
+
+if(budgetValue >= 50000)
+{
+    Leads[ID == leadID].Priority = "High";
+    Leads[ID == leadID].Status = "Hot Lead";
+}
+else if(budgetValue >= 20000)
+{
+    Leads[ID == leadID].Priority = "Medium";
+    Leads[ID == leadID].Status = "Warm Lead";
+}
+else
+{
+    Leads[ID == leadID].Priority = "Low";
+    Leads[ID == leadID].Status = "Cold Lead";
+}
