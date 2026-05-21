@@ -1,0 +1,11 @@
+leadID = input.ID;
+leadName = Leads[ID == leadID].Name;
+leadPriority = Leads[ID == leadID].Priority;
+
+insert into Tasks
+[
+    Task_Name = "Follow up with " + leadName
+    Status = "Open"
+    Priority = leadPriority
+    Due_date = zoho.currentdate.addDay(3)
+];
